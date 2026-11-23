@@ -1,6 +1,6 @@
 window.Pricing = (() => {
   const SHIPPING_FEE = 5;
-  const FREE_SHIPPING_MIN = 50;
+  const FREE_SHIPPING_MIN = 75;
   const COUPONS = { SAVE10: 0.1 };
 
   const round2 = (n) => Math.round(n * 100) / 100;
