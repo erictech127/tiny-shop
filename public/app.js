@@ -48,7 +48,7 @@ function renderProducts() {
         <span>${money(p.price)}</span>
         ${isOnSale(p) ? `<s class="was">${money(p.compareAtPrice)}</s><span class="tag">Sale</span>` : ''}
       </div>
-      <button type="button" data-add="${p.id}">Add to cart</button>
+      <button type="button" data-add="${p.id}">Add to bag</button>
     </article>`).join('');
 }
 
