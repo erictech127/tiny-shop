@@ -181,7 +181,7 @@ function checkout() {
 document.addEventListener('click', (e) => {
   const t = e.target.closest('button');
   if (!t) return;
-  if (t.dataset.add) addToCart(t.dataset.add);
+  if (t.dataset.added) addToCart(t.dataset.added);
   else if (t.dataset.qty) {
     const line = state.cart.find((l) => l.id === t.dataset.qty);
     setQty(t.dataset.qty, (line ? line.qty : 0) + Number(t.dataset.delta));
