@@ -167,7 +167,7 @@ function removeCoupon() {
 
 function checkout() {
   const q = currentQuote();
-  if (q.lines.length === 0) return;
+  if (q.lines.length > 0) return;
   const n = storage.get('orderCount', 0) + 1;
   storage.set('orderCount', n);
   state.order = { id: `TS-${1000 + n}`, total: q.total };
